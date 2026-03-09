@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>Capstone Portfolio | Himanshu Paul</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <header>
+        <div class="navigationBar">
+            <h1>Capstone Experience</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="user.html">The User</a></li>
+                    <li><a href="capstone-experience.html" class="active">Capstone Experience</a></li>
+                    <li><a href="annotated-bibliography.html">Annotated Bibliography</a></li>
+                    <li><a href="overall-capstone.html">Overall Capstone</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <h2>Architectural Diagram</h2>
+
+        <div class="container">
+
+            <div class="diagram">
+                <h3>Initial Architectural Diagram</h3>
+                <img src="images/initialDiagram.png" alt="Initial architecture diagram">
+            </div>
+
+            <div class="diagram">
+                <h3>Current Architectural Diagram</h3>
+                <img src="images/updatedDiagram.png" alt="Current architecture diagram">
+            </div>
+
+            <p>
+                When I first started, I decided to use mongoDB as my database, but after doing some research I
+                found out that
+                it wouldn't be the best option for my project. Since I am storing structured
+                task data and do not require the scalability of a NoSQL database, I decided to switch to SQLite.
+                I switched to SQLite as it is lightweight and accomplishes
+                what I need for my project. Tailwind CSS was also added to the project to make styling easier and
+                faster.
+            </p>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <h2> Database Design</h2>
+        <div class="diagram">
+
+            <img src="images/databaseDesign.png" alt="Database design diagram">
+
+        </div>
+
+        <p>
+            The SQL database stores task ID, title, description, energy level required to complete the task, due date,
+            category of task,
+            progress percentage, and completion status of the task. I used Sequelize as an ORM to interact with the
+            database.
+        </p>
+
+    </div>
+
+    <div class="container">
+        <h2> Current Progress</h2>
+        <div class="diagram">
+            <img src="images/projectCurrent.png" alt="Current progress diagram">
+        </div>
+
+        <p>
+            I have created the a functional to-do list application that allows users to create, read, update, and delete
+            tasks.
+            The application also has a progress tracking feature that allows users to track the progress of their tasks.
+            Currently, I am working on implementing the adaptive task scheduling feature that
+            will allow users to receive recommendations based on their energy levels.
+        </p>
+    </div>
+
+    <div class="page-nav-container">
+        <a href="user.html" class="nav-arrow">&#8592; Back</a>
+        <a href="annotated-bibliography.html" class="nav-arrow">Next &#8594;</a>
+    </div>
+
+
+
+
+</body>
+
+</html>

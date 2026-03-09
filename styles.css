@@ -1,0 +1,217 @@
+body {
+    background-color: #f8f9fa;
+    color: #000000;
+    line-height: 1.5;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+.navigationBar {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 18px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigationBar h1 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
+    width: 250px;
+    white-space: nowrap; 
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+}
+.container h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+.container p {
+    font-size: 18px;
+    color: #555;
+    text-align: justify;
+    max-width: 750px;
+    margin: 20px auto;
+    line-height: 1.6;
+}
+
+/* Solo diagram container */
+.container .diagram {
+    width: auto;
+    max-width: 600px;      /* smaller max width */
+    margin: 0 auto;        /* center horizontally */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Solo diagram image */
+.container .diagram img {
+    width: 100%;           /* fills the container width */
+    height: auto;          /* keeps aspect ratio */
+    max-height: 400px;     /* optional: limit vertical size */
+    object-fit: contain;
+    background-color: #ffddb8;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.theme {
+    margin-top: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.page-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 10px 0; /* vertical padding */
+    /* no background */
+}
+
+.page-nav-container {
+    max-width: 1100px;      /* same as your .container */
+    margin: 0 auto;         /* center horizontally */
+    display: flex;
+    justify-content: space-between; /* push back/next to edges of container */
+    padding: 0 20px;        /* horizontal padding inside container */
+}
+
+.nav-arrow {
+    text-decoration: none;
+    color: #000000;
+    background-color: #ff9341; /* button background stays visible */
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-arrow:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+.theme h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ff9341;
+    display: inline-block;
+    padding-bottom: 4px;
+}
+
+.annotation {
+    font-size: 18px;
+    color: #444;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+p.annotation {
+    color: rgb(0, 0, 0);
+    font-weight: bold; 
+}
+
+.sources {
+    list-style-type: none;
+    padding-left: 0;
+    text-align: left;
+}
+
+.sources li {
+    text-align: left;
+    padding-left: 25px;
+    margin-bottom: 10px;
+}
+
+.diagram-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.diagram {
+    width: 48%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.diagram img {
+    width: 100%;
+    height: 280px;
+    object-fit: contain;
+background-color: #ffddb8; 
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #ff9341;
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+
+header {
+    background: #ff9341;
+    border-bottom: 3px solid #111;
+}
+
+.nav-links {
+    font-size: 18px;
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000000;
+}
+
+nav a:hover {
+    color: #ffffff;
+}
+
+nav a.active {
+    text-decoration: underline;
+    color: #ffffff;
+}
