@@ -26,73 +26,120 @@
     </header>
 
     <div class="container">
-        <h2>Architectural Diagram</h2>
-
-        <div class="container">
-
-            <div class="diagram">
-                <h3>Initial Architectural Diagram</h3>
-                <img src="images/initialDiagram.png" alt="Initial architecture diagram">
-            </div>
-
-            <div class="diagram">
-                <h3>Current Architectural Diagram</h3>
-                <img src="images/updatedDiagram.png" alt="Current architecture diagram">
-            </div>
-
-            <p>
-                When I first started, I decided to use mongoDB as my database, but after doing some research I
-                found out that
-                it wouldn't be the best option for my project. Since I am storing structured
-                task data and do not require the scalability of a NoSQL database, I decided to switch to SQLite.
-                I switched to SQLite as it is lightweight and accomplishes
-                what I need for my project. Tailwind CSS was also added to the project to make styling easier and
-                faster.
-            </p>
-        </div>
-    </div>
-
-
-    <div class="container">
-        <h2> Database Design</h2>
-        <div class="diagram">
-
-            <img src="images/databaseDesign.png" alt="Database design diagram">
-
-        </div>
-
+        <!-- Overview -->
+        <h2>Overview</h2>
         <p>
-            The SQL database stores task ID, title, description, energy level required to complete the task, due date,
-            category of task,
-            progress percentage, and completion status of the task. I used Sequelize as an ORM to interact with the
-            database.
+            This page presents the technical development of my capstone project. It is organized into key components of
+            the system,
+            including architecture, database design, and application functionality. Each section highlights artifacts,
+            decisions,
+            challenges, and the evolution of my project, reflecting both the technical and personal growth experienced
+            during the process.
         </p>
 
-    </div>
+        <!-- Application Architecture -->
+        <h2>Application Architecture</h2>
 
-    <div class="container">
-        <h2> Current Progress</h2>
+        <h3>Initial Architecture</h3>
+        <p>
+            At the start of the project, I created an initial architecture using MongoDB for my database. I believed
+            that a NoSQL
+            database would provide flexibility and scalability for storing tasks. However, as I progressed, I realized
+            my data was
+            structured and did not require the flexibility of a NoSQL solution. This taught me to research what
+            technologies my project
+            needs before starting. I learned that technology need to be tested against project requirements.
+        </p>
+        <div class="diagram">
+            <img src="images/initialDiagram.png" alt="Initial architecture diagram">
+        </div>
+
+        <h3>Revised Architecture</h3>
+        <p>
+            After evaluating my needs, I switched to SQLite because it is lightweight, structured, and better suited for
+            task data.
+            This simplified my backend while meeting all my project's requirements. Additionally, I integrated Tailwind
+            CSS to
+            improve styling consistency and accelerate frontend development. This was how I learned to adapt my plans
+            when I learn new
+            information, and that adaptability is an improtant skill in software development.
+        </p>
+        <div class="diagram">
+            <img src="images/updatedDiagram.png" alt="Current architecture diagram">
+        </div>
+
+        <!-- Database Design -->
+        <h2>Database Design</h2>
+        <p>
+            I designed a SQL database to store task-related data including task ID, title, description, energy level,
+            due date,
+            category, progress percentage, and completion status. Using Sequelize as an ORM allowed me to interact with
+            the database
+            efficiently while keeping the code maintainable and organized. Designing my database taught me how to think
+            about data relationships and to plan for future features.
+        </p>
+        <div class="diagram">
+            <img src="images/databaseDesign.png" alt="Database design diagram">
+        </div>
+
+      <h2>UI Design Evolution</h2>
+
+<p>
+    The user interface evolved significantly during development. Initially, the layout was minimal, showing tasks and allowing task creation with no styling or guidance. Through stakeholder feedback and the use of Tailwind CSS, I improved visual hierarchy, spacing, and interactivity. This evolution helped me understand the importance of combining usability, aesthetics, and user feedback in frontend development.
+</p>
+
+<h3>Initial UI</h3>
+<div class="diagram-group">
+    <div class="diagram">
+        <img src="images/ui-initial-tasks.png" alt="Initial UI showing task display">
+        <p>Initial task display with basic layout.</p>
+    </div>
+    <div class="diagram">
+        <img src="images/ui-initial-addtask.png" alt="Initial UI showing adding a task">
+        <p>Initial task creation interface.</p>
+    </div>
+</div>
+
+<h3>Current UI</h3>
+<div class="diagram-group">
+    <div class="diagram">
+        <img src="images/ui-current-tasks.png" alt="Current UI showing task display">
+        <p>Updated task display with improved visual hierarchy and styling.</p>
+    </div>
+    <div class="diagram">
+        <img src="images/ui-current-addtask.png" alt="Current UI showing adding a task">
+        <p>Enhanced task creation interface with Tailwind CSS styling and better input method.</p>
+    </div>
+</div>
+
+        <!-- Current Progress -->
+        <h2>Application Development and Current Progress</h2>
+        <p>
+            I have built a functional to-do list application that allows users to create, read, update, and delete
+            tasks.
+            The application also includes a progress tracking feature. Currently, I am developing an adaptive task
+            scheduling
+            feature that recommends tasks based on user energy levels, adding complexity and enhancing usability.
+        </p>
         <div class="diagram">
             <img src="images/projectCurrent.png" alt="Current progress diagram">
         </div>
 
-        <p>
-            I have created the a functional to-do list application that allows users to create, read, update, and delete
-            tasks.
-            The application also has a progress tracking feature that allows users to track the progress of their tasks.
-            Currently, I am working on implementing the adaptive task scheduling feature that
-            will allow users to receive recommendations based on their energy levels.
-        </p>
+        <h2>Next Steps</h2>
+        <p> This project is  connected to my future goal of becoming a full-stack software engineer. By working
+            on both the frontend and backend, I gain practical experience that directly aligns with the work I want to
+            do in my career. Developing the project independently has strengthened my ability to learn on my own, a
+            skill I know will be essential for success in the workplace.</p>
+        <p> My next steps include continuing the development of my project until completion. I plan to implement a
+            Pomodoro timer, adding the adaptive task suggestion feature, and integrating a calendar to make planning
+            more interactive. With these features implemented, I will consider my project a success. </p>
     </div>
 
+    <!-- Page Navigation -->
     <div class="page-nav-container">
         <a href="user.html" class="nav-arrow">&#8592; Back</a>
         <a href="annotated-bibliography.html" class="nav-arrow">Next &#8594;</a>
     </div>
-
-
-
-
 </body>
 
 </html>
